@@ -8,6 +8,16 @@ st.markdown(
 <style>
 .stApp { background: linear-gradient(160deg, #fff0f8 0%, #f1e8ff 50%, #e6f4ff 100%); }
 h1, h2, h3 { color: #8e3fb5 !important; }
+.stApp, .stApp p, .stApp li, .stApp label, .stApp span, .stApp small,
+.stApp [data-testid="stMarkdownContainer"], .stApp [data-testid="stCaptionContainer"],
+.stApp [data-testid="stWidgetLabel"] p, .stApp [data-testid="stMetricLabel"] p,
+.stApp [data-testid="stMetricValue"], .stApp button[data-baseweb="tab"] p,
+.stApp [data-baseweb="radio"] div { color: #3b2a55 !important; }
+.stApp h1, .stApp h2, .stApp h3 { color: #8e3fb5 !important; }
+.stApp .big { color: #8e3fb5 !important; }
+.stApp button[data-baseweb="tab"][aria-selected="true"] p { color: #c2185b !important; font-weight: 800; }
+[data-testid="stSidebar"] { background: #f6ebff; }
+.stApp input { color: #3b2a55 !important; background: #ffffff !important; }
 .card { background: #ffffffcc; border: 2px dashed #d9a7f0; border-radius: 18px;
         padding: 14px 18px; margin: 10px 0; font-size: 1.15rem; }
 .big { font-size: 2.2rem; text-align: center; color: #8e3fb5; font-weight: 800; }
