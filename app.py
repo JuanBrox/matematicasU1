@@ -17,6 +17,12 @@ h1, h2, h3 { color: #8e3fb5 !important; }
 .stApp .big { color: #8e3fb5 !important; }
 .stApp button[data-baseweb="tab"][aria-selected="true"] p { color: #c2185b !important; font-weight: 800; }
 [data-testid="stSidebar"] { background: #f6ebff; }
+.stApp button, .stApp [data-testid^="stBaseButton"] { background: #f3d9ff !important; border: 2px solid #c58be6 !important; }
+.stApp button p, .stApp button span, .stApp button div { color: #5b1f80 !important; font-weight: 700; }
+.stApp pre, .stApp code { background: #ffffffcc !important; color: #3b2a55 !important; }
+.stApp pre *, .stApp code * { color: #3b2a55 !important; }
+.recta { background: #ffffffcc; border: 2px dashed #d9a7f0; border-radius: 14px; padding: 12px 16px;
+         font-family: monospace; font-size: 1.1rem; color: #3b2a55; overflow-x: auto; white-space: nowrap; }
 .stApp input { color: #3b2a55 !important; background: #ffffff !important; }
 .card { background: #ffffffcc; border: 2px dashed #d9a7f0; border-radius: 18px;
         padding: 14px 18px; margin: 10px 0; font-size: 1.15rem; }
@@ -342,7 +348,7 @@ with tab_aprender:
                     "se lee el número formado por las tres cifras siguientes.\n\n"
                     "Ejemplo: 5 | 342 → **cinco mil** trescientos cuarenta y dos.")
         st.subheader("📏 Recta numérica")
-        st.code("996  997  998  999  1000  1001  1002  1003  1004  1005  1006")
+        st.markdown("<div class='recta'>996 &nbsp; 997 &nbsp; 998 &nbsp; 999 &nbsp; <b>1000</b> &nbsp; 1001 &nbsp; 1002 &nbsp; 1003 &nbsp; 1004 &nbsp; 1005 &nbsp; 1006</div>", unsafe_allow_html=True)
         st.caption("Después del 999 viene el 1000 ✨")
 
     with t2:
